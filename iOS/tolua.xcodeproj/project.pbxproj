@@ -19,6 +19,7 @@
 		5382E2BC1C5F91C600736B9A /* fpconv.c in Sources */ = {isa = PBXBuildFile; fileRef = 5382E2B71C5F91C600736B9A /* fpconv.c */; };
 		5382E2BD1C5F91C600736B9A /* lua_cjson.c in Sources */ = {isa = PBXBuildFile; fileRef = 5382E2B91C5F91C600736B9A /* lua_cjson.c */; };
 		5382E2BE1C5F91C600736B9A /* strbuf.c in Sources */ = {isa = PBXBuildFile; fileRef = 5382E2BA1C5F91C600736B9A /* strbuf.c */; };
+		5382E9E01C8DBA230061A429 /* libluajit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5382E9DF1C8DBA230061A429 /* libluajit.a */; };
 		847D0E101C54CA3400A49E91 /* auxiliar.c in Sources */ = {isa = PBXBuildFile; fileRef = 847D0DEE1C54CA3400A49E91 /* auxiliar.c */; };
 		847D0E111C54CA3400A49E91 /* buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 847D0DF01C54CA3400A49E91 /* buffer.c */; };
 		847D0E121C54CA3400A49E91 /* except.c in Sources */ = {isa = PBXBuildFile; fileRef = 847D0DF21C54CA3400A49E91 /* except.c */; };
@@ -67,6 +68,7 @@
 		5382E2B91C5F91C600736B9A /* lua_cjson.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lua_cjson.c; path = ../../cjson/lua_cjson.c; sourceTree = "<group>"; };
 		5382E2BA1C5F91C600736B9A /* strbuf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = strbuf.c; path = ../../cjson/strbuf.c; sourceTree = "<group>"; };
 		5382E2BB1C5F91C600736B9A /* strbuf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = strbuf.h; path = ../../cjson/strbuf.h; sourceTree = "<group>"; };
+		5382E9DF1C8DBA230061A429 /* libluajit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libluajit.a; sourceTree = "<group>"; };
 		847D0D9B1C54C8E000A49E91 /* libtolua.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libtolua.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		847D0DEE1C54CA3400A49E91 /* auxiliar.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = auxiliar.c; sourceTree = "<group>"; };
 		847D0DEF1C54CA3400A49E91 /* auxiliar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = auxiliar.h; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5382E9E01C8DBA230061A429 /* libluajit.a in Frameworks */,
 				530478C91C5F977F005CF894 /* libpbc.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -117,6 +120,7 @@
 		5382E2C51C5F95BE00736B9A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5382E9DF1C8DBA230061A429 /* libluajit.a */,
 				530478C81C5F977F005CF894 /* libpbc.a */,
 			);
 			name = Frameworks;
@@ -376,7 +380,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
-				DEAD_CODE_STRIPPING = YES;
+				DEAD_CODE_STRIPPING = NO;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				HEADER_SEARCH_PATHS = (
 					"../luajit-2.1/src",
@@ -399,7 +403,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
-				DEAD_CODE_STRIPPING = YES;
+				DEAD_CODE_STRIPPING = NO;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				HEADER_SEARCH_PATHS = (
 					"../luajit-2.1/src",
