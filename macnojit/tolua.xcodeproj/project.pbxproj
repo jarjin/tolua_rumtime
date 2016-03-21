@@ -14,6 +14,7 @@
 		5399AA5F1C5E1C110038A8C0 /* pbc-lua.c in Sources */ = {isa = PBXBuildFile; fileRef = 5399AA5E1C5E1C110038A8C0 /* pbc-lua.c */; };
 		5399AA611C5E1C460038A8C0 /* lua_cjson.c in Sources */ = {isa = PBXBuildFile; fileRef = 5399AA601C5E1C460038A8C0 /* lua_cjson.c */; };
 		5399AA641C5E1C7C0038A8C0 /* fpconv.c in Sources */ = {isa = PBXBuildFile; fileRef = 5399AA631C5E1C7C0038A8C0 /* fpconv.c */; };
+		53BA1B1C1CA0403D0097A3F9 /* int64.c in Sources */ = {isa = PBXBuildFile; fileRef = 53BA1B1B1CA0403D0097A3F9 /* int64.c */; };
 		84ED5C081C4D0749006965FF /* bit.c in Sources */ = {isa = PBXBuildFile; fileRef = 84ED5C071C4D0749006965FF /* bit.c */; };
 		84EF238C1C4CCD3F0093A49A /* lapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 84EF23551C4CCD3F0093A49A /* lapi.c */; };
 		84EF238D1C4CCD3F0093A49A /* lauxlib.c in Sources */ = {isa = PBXBuildFile; fileRef = 84EF23571C4CCD3F0093A49A /* lauxlib.c */; };
@@ -84,6 +85,7 @@
 		5399AA601C5E1C460038A8C0 /* lua_cjson.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lua_cjson.c; path = ../../cjson/lua_cjson.c; sourceTree = "<group>"; };
 		5399AA621C5E1C770038A8C0 /* fpconv.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fpconv.h; path = ../../cjson/fpconv.h; sourceTree = "<group>"; };
 		5399AA631C5E1C7C0038A8C0 /* fpconv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = fpconv.c; path = ../../cjson/fpconv.c; sourceTree = "<group>"; };
+		53BA1B1B1CA0403D0097A3F9 /* int64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = int64.c; path = ../../int64.c; sourceTree = "<group>"; };
 		84ED5C071C4D0749006965FF /* bit.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = bit.c; path = ../../bit.c; sourceTree = "<group>"; };
 		84EF23551C4CCD3F0093A49A /* lapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lapi.c; sourceTree = "<group>"; };
 		84EF23561C4CCD3F0093A49A /* lapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lapi.h; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 		0F4B04D51800959F002EA938 /* tolua */ = {
 			isa = PBXGroup;
 			children = (
+				53BA1B1B1CA0403D0097A3F9 /* int64.c */,
 				5342EF381C5E556D008FA9D7 /* strbuf.c */,
 				5342EF391C5E556D008FA9D7 /* strbuf.h */,
 				5399AA631C5E1C7C0038A8C0 /* fpconv.c */,
@@ -419,6 +422,7 @@
 				84F8B8E81C4567C100AE9B8F /* udp.c in Sources */,
 				84ED5C081C4D0749006965FF /* bit.c in Sources */,
 				84EF23991C4CCD3F0093A49A /* lmathlib.c in Sources */,
+				53BA1B1C1CA0403D0097A3F9 /* int64.c in Sources */,
 				84F8B8E91C4567C100AE9B8F /* unix.c in Sources */,
 				84F8B8E41C4567C100AE9B8F /* select.c in Sources */,
 				84EF23981C4CCD3F0093A49A /* llex.c in Sources */,
