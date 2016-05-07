@@ -17,21 +17,21 @@
 ** set functions from list 'l' into table at top - 'nup'; each
 ** function gets the 'nup' elements at the top as upvalues.
 ** Returns with only the table at the stack.
-*/
 LUALIB_API void luaL_setfuncs (lua_State *L, const luaL_Reg *l, int nup) {
 #ifdef luaL_checkversion
 	luaL_checkversion(L);
 #endif
 	luaL_checkstack(L, nup, "too many upvalues");
-	for (; l->name != NULL; l++) {  /* fill the table with given functions */
+	for (; l->name != NULL; l++) {  
 		int i;
-		for (i = 0; i < nup; i++)  /* copy upvalues to the top */
+		for (i = 0; i < nup; i++)  
 			lua_pushvalue(L, -nup);
-		lua_pushcclosure(L, l->func, nup);  /* closure with those upvalues */
+		lua_pushcclosure(L, l->func, nup);  
 		lua_setfield(L, -(nup + 2), l->name);
 	}
-	lua_pop(L, nup);  /* remove upvalues */
+	lua_pop(L, nup);  
 }
+*/
 
 #define luaL_newlibtable(L,l) \
   lua_createtable(L, 0, sizeof(l)/sizeof((l)[0]) - 1)

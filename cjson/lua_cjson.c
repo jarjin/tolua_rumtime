@@ -1359,8 +1359,7 @@ static int lua_cjson_new(lua_State *l)
     fpconv_init();
 
     /* cjson module table */
-    //lua_newtable(l);
-    luaL_register(l, CJSON_MODNAME, reg);
+    lua_newtable(l);
 
     /* Register functions with config data as upvalue */
     json_create_config(l);

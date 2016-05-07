@@ -36,23 +36,23 @@ LOCAL_SRC_FILES :=	../../tolua.c \
 				    ../../pbc/src/varint.c \
 				    ../../pbc/src/wmessage.c \
 				    ../../pbc/binding/lua/pbc-lua.c \
-				    ../../cjson/fpconv.c \
-				    ../../cjson/strbuf.c \
-				    ../../cjson/lua_cjson.c \
+					../../cjson/strbuf.c \
+					../../cjson/lua_cjson.c \
+					../../cjson/fpconv.c \
 					../../luasocket/auxiliar.c \
  					../../luasocket/buffer.c \
  					../../luasocket/except.c \
  					../../luasocket/inet.c \
  					../../luasocket/io.c \
  					../../luasocket/luasocket.c \
- 					../../luasocket/luasocket_scripts.c \
-					../../luasocket/mime.c \
+ 					../../luasocket/mime.c \
  					../../luasocket/options.c \
  					../../luasocket/select.c \
  					../../luasocket/tcp.c \
  					../../luasocket/timeout.c \
  					../../luasocket/udp.c \
  					../../luasocket/usocket.c \
+ 					../../luasocket/compat.c \
 
 LOCAL_WHOLE_STATIC_LIBRARIES += libluajit
 include $(BUILD_SHARED_LIBRARY)
