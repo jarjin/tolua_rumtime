@@ -24,13 +24,13 @@ cd ..
 gcc -m64 -O3 -std=gnu99 -shared \
  tolua.c \
  int64.c \
+ uint64.c \
  pb.c \
  lpeg.c \
  struct.c \
- sproto/sproto.c \
- sproto/lsproto.c \
- pbc/binding/lua/pbc-lua.c \
+ cjson/strbuf.c \
  cjson/lua_cjson.c \
+ cjson/fpconv.c \
  luasocket/auxiliar.c \
  luasocket/buffer.c \
  luasocket/except.c \
@@ -45,6 +45,9 @@ gcc -m64 -O3 -std=gnu99 -shared \
  luasocket/udp.c \
  luasocket/wsocket.c \
  luasocket/compat.c \
+ sproto/sproto.c \
+ sproto/lsproto.c \
+ pbc/binding/lua/pbc-lua.c \
  -o Plugins/x86_64/tolua.dll \
  -I./ \
  -Iluajit/src \

@@ -13,10 +13,11 @@ LOCAL_C_INCLUDES += $(LOCAL_PATH)/../../pbc
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/../../cjson
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/../../
 
-LOCAL_CPPFLAGS := -O3
-LOCAL_CFLAGS :=  -O3 -std=gnu99
+LOCAL_CPPFLAGS := -O2
+LOCAL_CFLAGS :=  -O2 -std=gnu99
 LOCAL_SRC_FILES :=	../../tolua.c \
 					../../int64.c \
+					../../uint64.c \
 					../../pb.c \
 					../../lpeg.c \
 					../../struct.c \
