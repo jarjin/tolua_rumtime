@@ -1,6 +1,7 @@
 #!/bin/bash
 # 32 Bit Version
 mkdir -p window/x86
+mkdir -p Plugins/x86
 
 cd luajit
 mingw32-make clean
@@ -13,11 +14,6 @@ cd ../pbc/
 make clean
 make BUILDMODE=static CC="gcc -m32"
 cp build/libpbc.a ../window/x86/libpbc.a
-
-cd ../cjson/
-make clean
-make BUILDMODE=static CC="gcc -m32"
-cp build/libcjson.a ../window/x86/libcjson.a
 
 cd ..
 
@@ -47,7 +43,7 @@ gcc -m32 -O3 -std=gnu99 -shared \
 	luasocket/compat.c \
 	sproto/sproto.c \
 	sproto/lsproto.c \
-	pbc/binding/lua/pbc-lua.c \	
+	pbc/binding/lua/pbc-lua.c \
 	-o Plugins/x86/tolua.dll \
 	-I./ \
 	-Iluajit/src \
@@ -59,4 +55,4 @@ gcc -m32 -O3 -std=gnu99 -shared \
 	-Wl,--whole-archive \
 	window/x86/libluajit.a \
 	window/x86/libpbc.a \
-	window/x86/libcjson.a -Wl,--no-whole-archive -static-libgcc -static-libstdc++
+	-Wl,--no-whole-archive -static-libgcc -static-libstdc++

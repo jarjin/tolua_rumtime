@@ -11,6 +11,7 @@
 		5371FF1A1CDE1F5000AD16D3 /* libpbc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5371FF191CDE1F5000AD16D3 /* libpbc.a */; };
 		5388F30B1CDE0F4C00C9D424 /* lsproto.c in Sources */ = {isa = PBXBuildFile; fileRef = 5388F3071CDE0F4C00C9D424 /* lsproto.c */; };
 		5388F30C1CDE0F4C00C9D424 /* sproto.c in Sources */ = {isa = PBXBuildFile; fileRef = 5388F3091CDE0F4C00C9D424 /* sproto.c */; };
+		53BD21391D5EBB9500A20481 /* uint64.c in Sources */ = {isa = PBXBuildFile; fileRef = 53BD21381D5EBB9500A20481 /* uint64.c */; };
 		840092821CCF406200F89A56 /* auxiliar.c in Sources */ = {isa = PBXBuildFile; fileRef = 840092611CCF406200F89A56 /* auxiliar.c */; };
 		840092831CCF406200F89A56 /* buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 840092631CCF406200F89A56 /* buffer.c */; };
 		840092841CCF406200F89A56 /* compat.c in Sources */ = {isa = PBXBuildFile; fileRef = 840092651CCF406200F89A56 /* compat.c */; };
@@ -79,6 +80,7 @@
 		5388F3081CDE0F4C00C9D424 /* msvcint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = msvcint.h; path = ../../sproto/msvcint.h; sourceTree = "<group>"; };
 		5388F3091CDE0F4C00C9D424 /* sproto.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = sproto.c; path = ../../sproto/sproto.c; sourceTree = "<group>"; };
 		5388F30A1CDE0F4C00C9D424 /* sproto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sproto.h; path = ../../sproto/sproto.h; sourceTree = "<group>"; };
+		53BD21381D5EBB9500A20481 /* uint64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = uint64.c; path = ../../uint64.c; sourceTree = "<group>"; };
 		840092611CCF406200F89A56 /* auxiliar.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = auxiliar.c; sourceTree = "<group>"; };
 		840092621CCF406200F89A56 /* auxiliar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = auxiliar.h; sourceTree = "<group>"; };
 		840092631CCF406200F89A56 /* buffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = buffer.c; sourceTree = "<group>"; };
@@ -219,6 +221,7 @@
 				84F8B8B41C45679700AE9B8F /* struct.c */,
 				84F8B8B01C45677A00AE9B8F /* pb.c */,
 				849CC46A1C9846C800D4D510 /* int64.c */,
+				53BD21381D5EBB9500A20481 /* uint64.c */,
 				84F8B8B21C45678E00AE9B8F /* tolua.c */,
 				0F4B04D61800959F002EA938 /* Supporting Files */,
 			);
@@ -451,6 +454,7 @@
 				84EF23AA1C4CCD3F0093A49A /* lzio.c in Sources */,
 				8400928D1CCF406200F89A56 /* tcp.c in Sources */,
 				84F8B8B11C45677A00AE9B8F /* pb.c in Sources */,
+				53BD21391D5EBB9500A20481 /* uint64.c in Sources */,
 				840092821CCF406200F89A56 /* auxiliar.c in Sources */,
 				84EF23931C4CCD3F0093A49A /* ldump.c in Sources */,
 				84EF239B1C4CCD3F0093A49A /* loadlib.c in Sources */,

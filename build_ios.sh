@@ -42,6 +42,8 @@ make HOST_CC="gcc " CROSS="$ISDKP" TARGET_FLAGS="$ISDKF" TARGET=arm64 TARGET_SYS
 mv "$SRCDIR"/src/libluajit.a "$DESTDIR"/libluajit-arm64.a
 make clean
 
+mkdir -p ../Plugins/iOS
+
 cd ../iOS
 $LIPO -create "$DESTDIR"/libluajit-*.a -output "$DESTDIR"/libluajit.a
 $STRIP -S "$DESTDIR"/libluajit.a

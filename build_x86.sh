@@ -1,3 +1,5 @@
+mkdir -p Plugins/Android/libs/x86
+
 cd luajit/src
 
 # Android/x86, x86 (i686 SSE3), Android 4.0+ (ICS)

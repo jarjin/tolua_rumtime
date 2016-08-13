@@ -1,6 +1,7 @@
 #!/bin/bash
 # 62 Bit Version
 mkdir -p window/x86_64
+mkdir -p Plugins/x86_64
 
 cd luajit
 mingw32-make clean
@@ -13,11 +14,6 @@ cd ../pbc/
 make clean
 make BUILDMODE=static CC="gcc -m64"
 cp build/libpbc.a ../window/x86_64/libpbc.a
-
-cd ../cjson/
-make clean
-make BUILDMODE=static CC="gcc -m64"
-cp build/libcjson.a ../window/x86_64/libcjson.a
 
 cd ..
 
@@ -59,4 +55,4 @@ gcc -m64 -O3 -std=gnu99 -shared \
  -Wl,--whole-archive \
  window/x86_64/libluajit.a \
  window/x86_64/libpbc.a \
- window/x86_64/libcjson.a -Wl,--no-whole-archive -static-libgcc -static-libstdc++
+ -Wl,--no-whole-archive -static-libgcc -static-libstdc++

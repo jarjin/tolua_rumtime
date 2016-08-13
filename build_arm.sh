@@ -1,3 +1,5 @@
+mkdir -p Plugins/Android/libs/armeabi-v7a
+
 cd luajit/src
 
 # Android/ARM, armeabi-v7a (ARMv7 VFP), Android 4.0+ (ICS)
