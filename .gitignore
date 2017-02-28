@@ -31,3 +31,4 @@
 *.dSYM/
 /window
 /Plugins
+/android/libs
