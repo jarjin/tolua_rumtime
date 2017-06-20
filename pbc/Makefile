@@ -76,8 +76,6 @@ define PROTO_temp
 	protoc -o$$@ $$<
 endef
 
-$(foreach s,$(PROTOSRCS),$(eval $(call PROTO_temp,$(s))))
-
 proto : $(PROTO)
 
 .PHONY : all lib test proto clean

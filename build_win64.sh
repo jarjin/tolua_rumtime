@@ -1,12 +1,12 @@
 #!/bin/bash
-# 62 Bit Version
+# 64 Bit Version
 mkdir -p window/x86_64
 mkdir -p Plugins/x86_64
 
-cd luajit
+cd luajit-2.1
 mingw32-make clean
 
-mingw32-make BUILDMODE=static CC="gcc -m64 -O3"
+mingw32-make BUILDMODE=static CC="gcc -m64 -O2" XCFLAGS=-DLUAJIT_ENABLE_GC64
 cp src/libluajit.a ../window/x86_64/libluajit.a
 mingw32-make clean
 
@@ -17,7 +17,7 @@ cp build/libpbc.a ../window/x86_64/libpbc.a
 
 cd ..
 
-gcc -m64 -O3 -std=gnu99 -shared \
+gcc -m64 -O2 -std=gnu99 -shared \
  tolua.c \
  int64.c \
  uint64.c \
@@ -40,13 +40,12 @@ gcc -m64 -O3 -std=gnu99 -shared \
  luasocket/timeout.c \
  luasocket/udp.c \
  luasocket/wsocket.c \
- luasocket/compat.c \
  sproto/sproto.c \
  sproto/lsproto.c \
  pbc/binding/lua/pbc-lua.c \
  -o Plugins/x86_64/tolua.dll \
  -I./ \
- -Iluajit/src \
+ -Iluajit-2.1/src \
  -Iluasocket \
  -Isproto \
  -Ipbc \

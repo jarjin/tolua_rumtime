@@ -3,7 +3,7 @@
 mkdir -p window/x86
 mkdir -p Plugins/x86
 
-cd luajit
+cd luajit-2.1
 mingw32-make clean
 
 mingw32-make BUILDMODE=static CC="gcc -m32 -O3"
@@ -40,13 +40,12 @@ gcc -m32 -O3 -std=gnu99 -shared \
 	luasocket/timeout.c \
 	luasocket/udp.c \
 	luasocket/wsocket.c \
-	luasocket/compat.c \
 	sproto/sproto.c \
 	sproto/lsproto.c \
 	pbc/binding/lua/pbc-lua.c \
 	-o Plugins/x86/tolua.dll \
 	-I./ \
-	-Iluajit/src \
+	-Iluajit-2.1/src \
 	-Iluasocket \
 	-Isproto \
 	-Ipbc \
