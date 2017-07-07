@@ -35,3 +35,4 @@
 /macnojit/build
 /iOS/build
 /android/obj
+/android/jni/libluajit.a

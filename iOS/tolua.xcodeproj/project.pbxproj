@@ -11,6 +11,19 @@
 		53208EF21CDE11B5002B6AFA /* sproto.c in Sources */ = {isa = PBXBuildFile; fileRef = 53208EEF1CDE11B5002B6AFA /* sproto.c */; };
 		5371FF1E1CDE216700AD16D3 /* pbc-lua.c in Sources */ = {isa = PBXBuildFile; fileRef = 5371FF1D1CDE216700AD16D3 /* pbc-lua.c */; };
 		53BD213B1D5EBC0500A20481 /* uint64.c in Sources */ = {isa = PBXBuildFile; fileRef = 53BD213A1D5EBC0500A20481 /* uint64.c */; };
+		53CF17C21F1668AE00C7781F /* alloc.c in Sources */ = {isa = PBXBuildFile; fileRef = 53C9D60D1EF9652A00B0828D /* alloc.c */; };
+		53CF17C31F1668AE00C7781F /* array.c in Sources */ = {isa = PBXBuildFile; fileRef = 53C9D60F1EF9652A00B0828D /* array.c */; };
+		53CF17C41F1668AE00C7781F /* bootstrap.c in Sources */ = {isa = PBXBuildFile; fileRef = 53C9D6111EF9652A00B0828D /* bootstrap.c */; };
+		53CF17C51F1668AE00C7781F /* context.c in Sources */ = {isa = PBXBuildFile; fileRef = 53C9D6131EF9652A00B0828D /* context.c */; };
+		53CF17C61F1668AE00C7781F /* decode.c in Sources */ = {isa = PBXBuildFile; fileRef = 53C9D6151EF9652A00B0828D /* decode.c */; };
+		53CF17C71F1668AE00C7781F /* map.c in Sources */ = {isa = PBXBuildFile; fileRef = 53C9D6171EF9652A00B0828D /* map.c */; };
+		53CF17C81F1668AE00C7781F /* pattern.c in Sources */ = {isa = PBXBuildFile; fileRef = 53C9D6191EF9652A00B0828D /* pattern.c */; };
+		53CF17C91F1668AE00C7781F /* proto.c in Sources */ = {isa = PBXBuildFile; fileRef = 53C9D61B1EF9652A00B0828D /* proto.c */; };
+		53CF17CA1F1668AE00C7781F /* register.c in Sources */ = {isa = PBXBuildFile; fileRef = 53C9D61D1EF9652A00B0828D /* register.c */; };
+		53CF17CB1F1668AE00C7781F /* rmessage.c in Sources */ = {isa = PBXBuildFile; fileRef = 53C9D61E1EF9652A00B0828D /* rmessage.c */; };
+		53CF17CC1F1668AE00C7781F /* stringpool.c in Sources */ = {isa = PBXBuildFile; fileRef = 53C9D61F1EF9652A00B0828D /* stringpool.c */; };
+		53CF17CD1F1668AE00C7781F /* varint.c in Sources */ = {isa = PBXBuildFile; fileRef = 53C9D6211EF9652A00B0828D /* varint.c */; };
+		53CF17CE1F1668AE00C7781F /* wmessage.c in Sources */ = {isa = PBXBuildFile; fileRef = 53C9D6231EF9652A00B0828D /* wmessage.c */; };
 		8400929F1CCF43D600F89A56 /* tolua.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8400929E1CCF43D600F89A56 /* tolua.h */; };
 		840092A11CCF43D600F89A56 /* tolua.m in Sources */ = {isa = PBXBuildFile; fileRef = 840092A01CCF43D600F89A56 /* tolua.m */; };
 		840092A81CCF44F800F89A56 /* libluajit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 840092A71CCF44F800F89A56 /* libluajit.a */; };
@@ -346,6 +359,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53CF17C21F1668AE00C7781F /* alloc.c in Sources */,
+				53CF17C31F1668AE00C7781F /* array.c in Sources */,
+				53CF17C41F1668AE00C7781F /* bootstrap.c in Sources */,
+				53CF17C51F1668AE00C7781F /* context.c in Sources */,
+				53CF17C61F1668AE00C7781F /* decode.c in Sources */,
+				53CF17C71F1668AE00C7781F /* map.c in Sources */,
+				53CF17C81F1668AE00C7781F /* pattern.c in Sources */,
+				53CF17C91F1668AE00C7781F /* proto.c in Sources */,
+				53CF17CA1F1668AE00C7781F /* register.c in Sources */,
+				53CF17CB1F1668AE00C7781F /* rmessage.c in Sources */,
+				53CF17CC1F1668AE00C7781F /* stringpool.c in Sources */,
+				53CF17CD1F1668AE00C7781F /* varint.c in Sources */,
+				53CF17CE1F1668AE00C7781F /* wmessage.c in Sources */,
 				840092A11CCF43D600F89A56 /* tolua.m in Sources */,
 				840092EB1CCF45A800F89A56 /* serial.c in Sources */,
 				840092E31CCF45A800F89A56 /* compat.c in Sources */,
