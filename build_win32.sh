@@ -6,7 +6,7 @@ mkdir -p Plugins/x86
 cd luajit-2.1
 mingw32-make clean
 
-mingw32-make BUILDMODE=static CC="gcc -m32 -O3"
+mingw32-make BUILDMODE=static CC="gcc -m32 -O2"
 cp src/libluajit.a ../window/x86/libluajit.a
 mingw32-make clean
 
@@ -17,7 +17,7 @@ cp build/libpbc.a ../window/x86/libpbc.a
 
 cd ..
 
-gcc -m32 -O3 -std=gnu99 -shared \
+gcc -m32 -O2 -std=gnu99 -shared \
 	int64.c \
 	uint64.c \
 	tolua.c \

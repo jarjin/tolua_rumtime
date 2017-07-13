@@ -36,3 +36,7 @@
 /iOS/build
 /android/obj
 /android/jni/libluajit.a
+/iOS/libluajit.a
+/iOS/libluajit-arm64.a
+/iOS/libluajit-armv7.a
+/iOS/libluajit-armv7s.a
